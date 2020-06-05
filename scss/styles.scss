@@ -14,8 +14,6 @@ html {
 body {
     min-height: 100%;
     font: 1.5rem/1.6 'Kalam', cursive, sans-serif;
-    // overflow-y: hidden;
-    // overflow-y: auto;
     background-color: gray;
 }
 
@@ -48,7 +46,6 @@ body {
 
 .stats {
     // outline: 2px dashed yellow;
-    // width: 100%;
     padding-top: 4%;
     &__title {
         margin: 0 5%;
@@ -59,16 +56,8 @@ body {
     // outline: 2px solid red;
     border: 2px solid black;
     border-radius: 10px;
-    // width: 50%;
     margin: 5%;
-    // &__wrap {
-    //     // display: flex;
-    //     // flex-flow: row wrap;
-    // }
     &__done {
-        // order: 1;
-        // flex: 1 10%;
-        // padding: 0 1px 0 0;
         padding: 0;
         margin: 0 5% 5% 5%;
         border-radius: 10px;
@@ -107,12 +96,9 @@ textarea {
 
 .add_task__btn {
     margin: 1% 5% 5% 5%;
-    // padding: 0;
     width: 90%;
     height: 25px;
-    // background-color: greenyellow;
     background-color: #fff;
-    // border-color: gray;
     border: 1px solid gray;
     outline: none;
     transition: all .5s ease-in-out;
