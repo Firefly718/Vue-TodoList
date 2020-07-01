@@ -15,7 +15,7 @@
 
 <body>
     <div id="app">
-        <h1>How to create a SPA (todo)?</h1>
+        <h1>How enter in phase?</h1>
         <div class="left-page">
             <div class="stats">
                 <h3 class="stats__title">{{"Active tasks: " + tasks.length}}</h3>
@@ -30,14 +30,12 @@
     
             <button @click="add_task()" class="add_task__btn"><i class="fas fa-plus"></i></button>
 
-            <a href="page2.html" target="_self" class="link">How enter in phase?</a>
-            
+            <a href="index.html" target="_self" class="link">How to create a SPA (todo)?</a>
         </div>
 
         <div class="right-page">
             <task @task_done="delete_task" :data="data" v-for="(data, index) in tasks" :key="index"></task>
         </div>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

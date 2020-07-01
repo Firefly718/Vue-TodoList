@@ -335,7 +335,11 @@ body {
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
 
 .left-page {
   width: 50%;
@@ -343,6 +347,14 @@ body {
 
 .right-page {
   width: 50%; }
+
+h1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  border-bottom: 2px dotted black;
+  margin: 1.5rem;
+  text-align: center; }
 
 .stats {
   padding-top: 4%; }
@@ -382,7 +394,8 @@ input {
 textarea {
   margin: 1% 5%;
   width: 90%;
-  height: 200px; }
+  height: 200px;
+  max-width: 90%; }
 
 .add_task__btn {
   margin: 1% 5% 5% 5%;
@@ -396,3 +409,20 @@ textarea {
   transition: all .5s ease-in-out; }
   .add_task__btn:hover {
     background-color: greenyellow; }
+
+.link {
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(50%, #a85a00), to(#ffa620));
+  background: -o-linear-gradient(left, black 0%, #a85a00 50%, #ffa620 100%);
+  background: linear-gradient(90deg, black 0%, #a85a00 50%, #ffa620 100%);
+  text-decoration: none;
+  color: blanchedalmond;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 6rem;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 0 20px 20px 0;
+  -webkit-box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.75); }
