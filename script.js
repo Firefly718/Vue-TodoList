@@ -3,6 +3,9 @@ Vue.component('task', {
     methods: {
         task_done() {
             this.$emit('task_done');
+        },
+        task_remove() {
+            this.$emit('task_remove');
         }
     },
     template: `
@@ -83,6 +86,9 @@ var vue = new Vue({
     },
     methods: {
         done_task(id) {
+            this.tasks.splice(id, 1);
+        },
+        delete_task(id) {
             this.tasks.splice(id, 1);
         },
         add_task() {

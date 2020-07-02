@@ -88,20 +88,19 @@ h1 {
     &__desc {
         margin: 0;
     }
-}
-
-.task-delete {
-    padding: 0;
-    margin: 0 5% 5% 5%;
-    border-radius: 10px;
-    width: 40px;
-    height: 40px;
-    background-color: orange;
-    border-color: black;
-    transition: all .5s ease-in;
-    outline: none;
-    &:hover {
-        background-color: brown;
+    &__remove {
+        padding: 0;
+        margin: 0 5% 5% 0;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        background-color: orange;
+        border-color: black;
+        transition: all .5s ease-in;
+        outline: none;
+        &:hover {
+            background-color: pink;
+        }
     }
 }
 
