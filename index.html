@@ -35,7 +35,8 @@
         </div>
 
         <div class="right-page">
-            <task @task_done="delete_task" :data="data" v-for="(data, index) in tasks" :key="index"></task>
+            <task @task_done="done_task" :data="data" v-for="(data, index) in tasks" :key="index"></task>
+            <task class="task-delete" @task_remove="delete_task" :data="data" v-for="(data, index) in tasks" :key="index"></task>
         </div>
 
     </div>
